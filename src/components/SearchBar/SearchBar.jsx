@@ -47,7 +47,20 @@ const SearchBar = ({ onSubmit }) => {
         </button>
       </form>
 
-      <Toaster />
+      <Toaster
+        containerStyle={{
+          top: "10%",
+          left: "60%",
+        }}
+        toastOptions={{
+          error: {
+            style: {
+              background: "var(--second-color)",
+              color: "white",
+            },
+          },
+        }}
+      />
     </header>
   );
 };

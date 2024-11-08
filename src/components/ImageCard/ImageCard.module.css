@@ -1,0 +1,23 @@
+.card {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: scale var(--animation-mode);
+  &:hover,
+  &:focus {
+    scale: 1.01;
+  }
+}
+
+.img {
+  width: 320px;
+  height: 320px;
+}
+
+@media (min-width: 1280px) {
+  .img {
+    width: 400px;
+    height: 400px;
+  }
+}

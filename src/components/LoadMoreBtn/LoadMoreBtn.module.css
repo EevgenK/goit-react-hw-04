@@ -1,0 +1,15 @@
+.btn {
+  text-transform: uppercase;
+  padding: 10px;
+  background-color: var(--accent-color);
+  color: var(--second-text-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  transition: scale var(--animation-mode);
+  &:hover,
+  &:focus {
+    scale: 1.1;
+  }
+}
