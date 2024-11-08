@@ -10,6 +10,6 @@
   transition: scale var(--animation-mode);
   &:hover,
   &:focus {
-    scale: 1.1;
+    scale: 1.2;
   }
 }

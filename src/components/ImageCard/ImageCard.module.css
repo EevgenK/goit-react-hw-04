@@ -13,6 +13,11 @@
 .img {
   width: 320px;
   height: 320px;
+  transition: transform var(--animation-mode);
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
 }
 
 @media (min-width: 1280px) {

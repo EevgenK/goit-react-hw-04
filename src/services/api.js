@@ -16,7 +16,6 @@ export const getGallery = async (query, page = 1) => {
       page,
     },
   });
-  const perPage = instance.defaults.params.per_page;
-  const totalPages = Math.round(data.total_pages / perPage);
-  return { data, totalPages };
+  const pages = data.total_pages;
+  return { data, pages };
 };
